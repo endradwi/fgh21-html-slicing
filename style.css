@@ -1485,4 +1485,57 @@ padding-bottom: 20px;
     line-height: 54px;
     letter-spacing: 1px;
 }
+.label{
+width: 1135px;
+height: 726px;
+top: 300px;
+left: 116px;
+border-radius: 30px;
 
+display: grid;
+grid-template-columns: auto auto;
+font-family: Poppins;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 1px;
+text-align: left;
+
+}
+.label-1{
+    font-family: Poppins;
+font-size: 20px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 1px;
+text-align: left;
+
+}
+.label1, .label2, .label3, .label4, .label5, .label6, .label7{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.label input {
+    width: 500px;
+    height: 55px;
+    padding-left: 10px;
+}
+.label7 input{
+    width: 1050px;
+    height: 95px;
+}
+.label7 {
+    grid-column: 1/span 2;
+}
+.label8{
+    margin: 50px;
+}
+.label8 input{
+    width: 315px;
+height: 61px;
+border-radius: 15px;
+background-color: #3366FF;
+border: none;
+
+}
