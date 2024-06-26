@@ -105,7 +105,7 @@ margin-left: 10px;
 
 .head{
     display: flex;
-    gap: 350px;
+    justify-content: space-between;
     padding: 10px;
     font-family: Poppins;
     font-size: 14px;
@@ -113,21 +113,22 @@ margin-left: 10px;
     line-height: 21px;
     letter-spacing: 1px;
     text-align: left;
-    width: 1366px;
+    width: 100%;
     height: 90px;
 }
-@media (max-width : 992px) {
-    .head{
-        height: 300px;
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-    }
-    .nav{
-        flex-direction: column;
-
-    }
+.home{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
+.home button{
+    margin: 0;
+}
+.home-button button{
+    background-color: #ffff;
+    color: #000000;
+}
+
 .aset {
     display: flex;
     text-align: center;
@@ -168,6 +169,11 @@ margin-left: 10px;
     display: flex;
     gap: 20px;
     align-items: center;
+}
+.nav-home{
+    color: #3366FF;
+    text-align: center;
+    padding-top: 20px;
 }
 .profile{
     display: flex;
@@ -296,11 +302,11 @@ button{
     border: none;
 }
 footer{
-    width: 1366px;
+    width: 100%;
 }
 .grid-container{
   display: grid;
-  width: 1366px;
+  width: 100%;
   grid-template-columns: auto auto auto auto;
   gap: 0;
   
@@ -948,15 +954,17 @@ letter-spacing: 0.5px;
 }
 .menu{
     background-color: #3366FF;
-    width: 1366px;
+    width: 100%;
     height: 500px;
     position: relative;
     overflow: hidden;
 }
 .menu-event{
-    width: 1366px;
+    
+    justify-content: center;
+    text-align: center;
     height: 1000px;
-    align-items: center;
+    
 }
 .menu-up{
     width: 350px;
@@ -980,6 +988,7 @@ letter-spacing: 0.5px;
     width: 350px;
     height: 350px;
     margin-left: 650px;
+    left: 600px;
     bottom: 150px;
     box-sizing: border-box;
 }
@@ -992,14 +1001,14 @@ letter-spacing: 0.5px;
     position: absolute;
     width: 100%;
     height: 100%;
-    margin-left: 900px;
+    left: 1500px;
     box-sizing: border-box;
 }
 .menu-up3{
     width: 600px;
     height: 478.36px;
     position: absolute;
-    margin-left: 700px;
+    left: 1200px;
 }
 .menu-up3 img{
     width: 300px;
@@ -1031,34 +1040,25 @@ letter-spacing: 0.5px;
     background-image: linear-gradient(to bottom, transparent , #3366FF);
 }
 .event-menu{
+    
     display: flex;
-    gap: 0;
+    gap: 10px;
     width: 100px;
     height: 30px;
     background-color: #FF3D7140;
-    text-align: center;
     border-radius: 20px;
     color: #FF3D71;
-    margin-left: 600px;
     margin-top: 50px;
-}
-.event-menu p{
-    margin: 0;
-    padding-top: 5px;
-    padding-right: 15px;
+    align-items: center;
+    margin-left: 880px;
+    padding-left: 20px;
     font-family: Poppins;
-font-size: 12px;
-font-weight: 600;
-line-height: 18px;
-letter-spacing: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
 
-}
-.event-menu h4{
-    margin: 0;
-    font-size: 20px;
-    color: #FF3D71;
-}
-.event-menu1 h5{
+.event-menu1{
     font-family: Poppins;
 font-size: 36px;
 font-weight: 600;
@@ -1069,19 +1069,14 @@ margin-top: 50px;
 margin-bottom: 50px;
 }
 .event-menu2, .event-menu3 {
-    justify-content: center;
-    text-align: center;
+    
+    
     border-width: 2px;
     border-color: #FF8900;
     border-style: solid;
     width: 50px;
     border-radius: 15px;
     color: #FF8900;
-}
-.event-menu2 p, .event-menu3 p {
-    margin-bottom: 0;
-    margin-top: 7px;
-    padding-top: 5px;
 }
 .event-menu2 i{
     width: 6px;
@@ -1097,7 +1092,29 @@ margin-bottom: 20px;
 .event-cover{
     display: flex;
     gap: 15px;
-    margin-left: 500px;
+   justify-content: center;
+}
+@media screen and (max-width : 992px) {
+    .head{
+        height: unset;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .nav{
+        flex-direction: column;
+        text-align: center;
+    }
+    .home{
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+    }
+    .home button{
+        width: 800px;
+    }
+    
 }
 .cover{
     width: 260px;
@@ -1169,17 +1186,18 @@ font-size: 14px;
 .cover-flex{
     display: flex;
     gap: 50px;
+    left: 300px;
     margin-bottom: 50px;
     margin-top: 100px;
     max-width: 1300px;
+    
     overflow-x: scroll;
-    left: 100px;
     position: relative;
 }
 .arrow {
     display: flex;
     gap : 50px;
-    margin-left: 600px;
+    margin-left: 900px;
 }
 .arrow1 {
     background-color: #ffff;
@@ -1203,9 +1221,10 @@ font-size: 14px;
     width: 1266px;
     height: 700px;
     border-radius: 50px;
-    margin-left: 100px;
+   left: 300px;
     margin-top: 100px;
     position: relative;
+    
 }
 
 .place-up{
@@ -1306,13 +1325,13 @@ color: #ffff;
 .main-menu{
     display: flex;
     gap: 100px;
-    margin-left: 200px;
+    margin-left: 460px;
     font-family: Poppins;
-font-size: 16px;
-font-weight: 500;
-line-height: 24px;
-text-align: center;
-color: #C1C5D0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+    color: #C1C5D0;
 }
 .main-menu1{
     color: #3366FF;
@@ -1403,7 +1422,7 @@ margin-top: 20px;
     margin-bottom: 50px;
     margin-top: 100px;
     max-width: 1300px;
-    left: 100px;
+    left: 350px;
     position: relative;
     align-items: center;
 }
@@ -1426,7 +1445,7 @@ margin-top: 20px;
 
 .place-down{
     background-color: #454850;
-    width: 1366px;
+    width: 1000%;
     height: 450px;
     position: relative;
     margin-bottom: 100px;
@@ -1437,6 +1456,7 @@ margin-top: 20px;
     height: 150px;
     position: absolute;
     right: 0;
+    top: 0;
 }
 .place-down1 img{
     position: absolute;
