@@ -104,9 +104,8 @@ margin-left: 10px;
 }
 
 .head{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 10px;
+    display: flex;
+    gap: 350px;
     padding: 10px;
     font-family: Poppins;
     font-size: 14px;
@@ -114,26 +113,66 @@ margin-left: 10px;
     line-height: 21px;
     letter-spacing: 1px;
     text-align: left;
+    width: 1366px;
+    height: 90px;
+}
+@media (max-width : 992px) {
+    .head{
+        height: 300px;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .nav{
+        flex-direction: column;
 
+    }
+}
+.aset {
+    display: flex;
+    text-align: center;
+    gap: 0;
+}
+.aset span{
+    margin: 0;
+}
+.aset div:nth-child(2){
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: blue;
+    padding-top: 10px;
+    
+}
+.aset div:last-child{
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: red;
+    padding-top: 10px;
 }
 .aset img{
-    width: 156.5px;
+    width: 47.5px;
     height: 50px;
     top: 20px;
     left: 50px;
-    padding: 0px;
-    gap: 0px;
-    opacity: 0px;
 
 }
 .nav{
-    padding-top: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
-.nav span{
-    margin-left: 50px;
-}
-span{
-    margin: 15px;
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .profile img{
         width: 44px;
@@ -256,8 +295,12 @@ button{
     margin-top: 50px;
     border: none;
 }
+footer{
+    width: 1366px;
+}
 .grid-container{
   display: grid;
+  width: 1366px;
   grid-template-columns: auto auto auto auto;
   gap: 0;
   
@@ -905,9 +948,15 @@ letter-spacing: 0.5px;
 }
 .menu{
     background-color: #3366FF;
-    width: 100%;
+    width: 1366px;
     height: 500px;
     position: relative;
+    overflow: hidden;
+}
+.menu-event{
+    width: 1366px;
+    height: 1000px;
+    align-items: center;
 }
 .menu-up{
     width: 350px;
@@ -929,9 +978,9 @@ letter-spacing: 0.5px;
 .menu-up1 img{
     position: absolute;
     width: 350px;
-    height: 300px;
-    margin-left: 1170px;
-   
+    height: 350px;
+    margin-left: 650px;
+    bottom: 150px;
     box-sizing: border-box;
 }
 .menu-up2{
@@ -943,14 +992,14 @@ letter-spacing: 0.5px;
     position: absolute;
     width: 100%;
     height: 100%;
-    margin-left: 1400px;
+    margin-left: 900px;
     box-sizing: border-box;
 }
 .menu-up3{
     width: 600px;
     height: 478.36px;
-    position: relative;
-    margin-left: 1000px;
+    position: absolute;
+    margin-left: 700px;
 }
 .menu-up3 img{
     width: 300px;
@@ -990,7 +1039,7 @@ letter-spacing: 0.5px;
     text-align: center;
     border-radius: 20px;
     color: #FF3D71;
-    margin-left: 890px;
+    margin-left: 600px;
     margin-top: 50px;
 }
 .event-menu p{
@@ -1048,7 +1097,7 @@ margin-bottom: 20px;
 .event-cover{
     display: flex;
     gap: 15px;
-    margin-left: 785px;
+    margin-left: 500px;
 }
 .cover{
     width: 260px;
@@ -1120,10 +1169,9 @@ font-size: 14px;
 .cover-flex{
     display: flex;
     gap: 50px;
-    margin-left: 100px;
     margin-bottom: 50px;
     margin-top: 100px;
-    max-width: 1400px;
+    max-width: 1300px;
     overflow-x: scroll;
     left: 100px;
     position: relative;
@@ -1131,7 +1179,7 @@ font-size: 14px;
 .arrow {
     display: flex;
     gap : 50px;
-    margin-left: 900px;
+    margin-left: 600px;
 }
 .arrow1 {
     background-color: #ffff;
@@ -1155,7 +1203,7 @@ font-size: 14px;
     width: 1266px;
     height: 700px;
     border-radius: 50px;
-    margin-left: 300px;
+    margin-left: 100px;
     margin-top: 100px;
     position: relative;
 }
@@ -1258,7 +1306,7 @@ color: #ffff;
 .main-menu{
     display: flex;
     gap: 100px;
-    margin-left: 400px;
+    margin-left: 200px;
     font-family: Poppins;
 font-size: 16px;
 font-weight: 500;
@@ -1352,10 +1400,9 @@ margin-top: 20px;
 .main-flex{
     display: flex;
     gap: 50px;
-    margin-left: 250px;
     margin-bottom: 50px;
     margin-top: 100px;
-    max-width: 1400px;
+    max-width: 1300px;
     left: 100px;
     position: relative;
     align-items: center;
@@ -1379,7 +1426,7 @@ margin-top: 20px;
 
 .place-down{
     background-color: #454850;
-    width: 1900px;
+    width: 1366px;
     height: 450px;
     position: relative;
     margin-bottom: 100px;
